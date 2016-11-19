@@ -1,0 +1,300 @@
+F
+======================================================================
+FAIL: test_abi.test_abi_stability
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/cnerg/cyclus/tests/test_abi.py", line 32, in test_abi_stability
+    assert_true(obs)
+AssertionError: False is not true
+-------------------- >> begin captured stdout << ---------------------
+--- Cyclus Core 1.3.0 (1.3.0-rc6)	2015-05-21 15:51:39 -0500
++++ Cyclus Core 1.3.0 (1.4.0-rc2)	2015-11-18 15:25:04 -0600
+@@ -1,3 +1,4 @@
++cyclus::Agent*& std::forward<cyclus::Agent*&>(std::remove_reference<cyclus::Agent*&>::type&)
+ cyclus::Agent::AddToTable()
+ cyclus::Agent::AdjustMatlPrefs(std::map<cyclus::Request<cyclus::Material>*, std::map<cyclus::Bid<cyclus::Material>*, double, std::less<cyclus::Bid<cyclus::Material>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Material>* const, double> > >, std::less<cyclus::Request<cyclus::Material>*>, std::allocator<std::pair<cyclus::Request<cyclus::Material>* const, std::map<cyclus::Bid<cyclus::Material>*, double, std::less<cyclus::Bid<cyclus::Material>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Material>* const, double> > > > > >&)
+ cyclus::Agent::AdjustProductPrefs(std::map<cyclus::Request<cyclus::Product>*, std::map<cyclus::Bid<cyclus::Product>*, double, std::less<cyclus::Bid<cyclus::Product>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Product>* const, double> > >, std::less<cyclus::Request<cyclus::Product>*>, std::allocator<std::pair<cyclus::Request<cyclus::Product>* const, std::map<cyclus::Bid<cyclus::Product>*, double, std::less<cyclus::Bid<cyclus::Product>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Product>* const, double> > > > > >&)
+@@ -33,9 +34,13 @@
+ cyclus::Agent::spec()
+ cyclus::Agent::spec(std::string)
+ cyclus::Agent::str()
++cyclus::Agent::version()
+ cyclus::Agent::~Agent()
++cyclus::AgentSpec const& std::forward<cyclus::AgentSpec const&>(std::remove_reference<cyclus::AgentSpec const&>::type&)
++cyclus::AgentSpec&& std::forward<cyclus::AgentSpec>(std::remove_reference<cyclus::AgentSpec>::type&)
+ cyclus::AgentSpec::AgentSpec()
+ cyclus::AgentSpec::AgentSpec(cyclus::AgentSpec const&)
++cyclus::AgentSpec::AgentSpec(cyclus::AgentSpec&&)
+ cyclus::AgentSpec::AgentSpec(cyclus::InfileTree*)
+ cyclus::AgentSpec::AgentSpec(std::string)
+ cyclus::AgentSpec::AgentSpec(std::string, std::string, std::string, std::string)
+@@ -44,10 +49,16 @@
+ cyclus::AgentSpec::agent()
+ cyclus::AgentSpec::alias()
+ cyclus::AgentSpec::operator=(cyclus::AgentSpec const&)
++cyclus::AgentSpec::operator=(cyclus::AgentSpec&&)
+ cyclus::AgentSpec::str()
+ cyclus::AgentSpec::~AgentSpec()
++cyclus::Arc const& std::forward<cyclus::Arc const&>(std::remove_reference<cyclus::Arc const&>::type&)
+ cyclus::Arc cyclus::TranslateArc<cyclus::Material>(cyclus::ExchangeTranslationContext<cyclus::Material> const&, cyclus::Bid<cyclus::Material>*)
+ cyclus::Arc cyclus::TranslateArc<cyclus::Product>(cyclus::ExchangeTranslationContext<cyclus::Product> const&, cyclus::Bid<cyclus::Product>*)
++cyclus::Arc& std::forward<cyclus::Arc&>(std::remove_reference<cyclus::Arc&>::type&)
++cyclus::Arc&& std::forward<cyclus::Arc>(std::remove_reference<cyclus::Arc>::type&)
++cyclus::Arc*& std::forward<cyclus::Arc*&>(std::remove_reference<cyclus::Arc*&>::type&)
++cyclus::Arc*&& std::forward<cyclus::Arc*>(std::remove_reference<cyclus::Arc*>::type&)
+ cyclus::Arc::Arc(boost::shared_ptr<cyclus::ExchangeNode>, boost::shared_ptr<cyclus::ExchangeNode>)
+ cyclus::Arc::Arc(cyclus::Arc const&)
+ cyclus::Arc::excl_val() const
+@@ -59,6 +70,8 @@
+ cyclus::Arc::~Arc()
+ cyclus::AvgPref(boost::shared_ptr<cyclus::ExchangeNode>)
+ cyclus::AvgPrefComp(boost::shared_ptr<cyclus::ExchangeNode>, boost::shared_ptr<cyclus::ExchangeNode>)
++cyclus::Bid<cyclus::Material>*& std::forward<cyclus::Bid<cyclus::Material>*&>(std::remove_reference<cyclus::Bid<cyclus::Material>*&>::type&)
++cyclus::Bid<cyclus::Material>*&& std::forward<cyclus::Bid<cyclus::Material>*>(std::remove_reference<cyclus::Bid<cyclus::Material>*>::type&)
+ cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
+ cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
+ cyclus::Bid<cyclus::Material>::bidder() const
+@@ -67,6 +80,8 @@
+ cyclus::Bid<cyclus::Material>::portfolio()
+ cyclus::Bid<cyclus::Material>::request() const
+ cyclus::Bid<cyclus::Material>::~Bid()
++cyclus::Bid<cyclus::Product>*& std::forward<cyclus::Bid<cyclus::Product>*&>(std::remove_reference<cyclus::Bid<cyclus::Product>*&>::type&)
++cyclus::Bid<cyclus::Product>*&& std::forward<cyclus::Bid<cyclus::Product>*>(std::remove_reference<cyclus::Bid<cyclus::Product>*>::type&)
+ cyclus::Bid<cyclus::Product>::bidder() const
+ cyclus::Bid<cyclus::Product>::exclusive() const
+ cyclus::Bid<cyclus::Product>::offer() const
+@@ -98,6 +113,7 @@
+ cyclus::BuildMasterSchema(std::string, std::string)
+ cyclus::Capacity(boost::shared_ptr<cyclus::ExchangeNode>, cyclus::Arc const&, double)
+ cyclus::Capacity(cyclus::Arc const&, double, double)
++cyclus::CapacityConstraint<cyclus::Material> const& std::forward<cyclus::CapacityConstraint<cyclus::Material> const&>(std::remove_reference<cyclus::CapacityConstraint<cyclus::Material> const&>::type&)
+ cyclus::CapacityConstraint<cyclus::Material>::CapacityConstraint(cyclus::CapacityConstraint<cyclus::Material> const&)
+ cyclus::CapacityConstraint<cyclus::Material>::CapacityConstraint(double)
+ cyclus::CapacityConstraint<cyclus::Material>::CapacityConstraint(double, boost::shared_ptr<cyclus::Converter<cyclus::Material> >)
+@@ -106,6 +122,7 @@
+ cyclus::CapacityConstraint<cyclus::Material>::id() const
+ cyclus::CapacityConstraint<cyclus::Material>::next_id_
+ cyclus::CapacityConstraint<cyclus::Material>::~CapacityConstraint()
++cyclus::CapacityConstraint<cyclus::Product> const& std::forward<cyclus::CapacityConstraint<cyclus::Product> const&>(std::remove_reference<cyclus::CapacityConstraint<cyclus::Product> const&>::type&)
+ cyclus::CapacityConstraint<cyclus::Product>::CapacityConstraint(cyclus::CapacityConstraint<cyclus::Product> const&)
+ cyclus::CapacityConstraint<cyclus::Product>::CapacityConstraint(double, boost::shared_ptr<cyclus::Converter<cyclus::Product> >)
+ cyclus::CapacityConstraint<cyclus::Product>::capacity() const
+@@ -120,15 +137,19 @@
+ cyclus::Composition::CreateFromAtom(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >)
+ cyclus::Composition::CreateFromMass(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >)
+ cyclus::Composition::Decay(int)
+-cyclus::Composition::NewDecay(int)
++cyclus::Composition::Decay(int, unsigned long)
++cyclus::Composition::NewDecay(int, unsigned long)
+ cyclus::Composition::Record(cyclus::Context*)
+ cyclus::Composition::atom()
+ cyclus::Composition::id()
+ cyclus::Composition::mass()
+ cyclus::Composition::~Composition()
++cyclus::Cond const& std::forward<cyclus::Cond const&>(std::remove_reference<cyclus::Cond const&>::type&)
++cyclus::Cond& std::forward<cyclus::Cond&>(std::remove_reference<cyclus::Cond&>::type&)
++cyclus::Cond&& std::forward<cyclus::Cond>(std::remove_reference<cyclus::Cond>::type&)
+ cyclus::Cond::Cond(cyclus::Cond const&)
++cyclus::Cond::Cond(cyclus::Cond&&)
+ cyclus::Cond::Cond(std::string, std::string, boost::spirit::basic_hold_any<char>)
+-cyclus::Cond::operator=(cyclus::Cond const&)
+ cyclus::Cond::~Cond()
+ cyclus::CondInjector::ColumnTypes(std::string)
+ cyclus::CondInjector::CondInjector(cyclus::QueryableBackend*, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >)
+@@ -136,6 +157,7 @@
+ cyclus::CondInjector::Tables()
+ cyclus::CondInjector::~CondInjector()
+ cyclus::Context::AddPrototype(std::string, cyclus::Agent*)
++cyclus::Context::AddPrototype(std::string, cyclus::Agent*, bool)
+ cyclus::Context::AddRecipe(std::string, boost::shared_ptr<cyclus::Composition>)
+ cyclus::Context::Context(cyclus::Timer*, cyclus::Recorder*)
+ cyclus::Context::DelAgent(cyclus::Agent*)
+@@ -180,6 +202,9 @@
+ cyclus::DbInit::DbInit(cyclus::Agent*)
+ cyclus::DbInit::DbInit(cyclus::Agent*, bool)
+ cyclus::DbInit::NewDatum(std::string)
++cyclus::DbTypes const& std::forward<cyclus::DbTypes const&>(std::remove_reference<cyclus::DbTypes const&>::type&)
++cyclus::DbTypes&& std::forward<cyclus::DbTypes&&>(std::remove_reference<cyclus::DbTypes&&>::type&)
++cyclus::DbTypes&& std::forward<cyclus::DbTypes>(std::remove_reference<cyclus::DbTypes>::type&)
+ cyclus::Decayer::AddNucToList(int)
+ cyclus::Decayer::AddNucToMaps(int)
+ cyclus::Decayer::BuildDecayMatrix()
+@@ -188,6 +213,7 @@
+ cyclus::Decayer::GetResult(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >&)
+ cyclus::Decayer::IsNucTracked(int)
+ cyclus::Decayer::~Decayer()
++cyclus::Digest const& std::forward<cyclus::Digest const&>(std::remove_reference<cyclus::Digest const&>::type&)
+ cyclus::Digest cyclus::Hdf5Back::VLWrite<cyclus::Blob, (cyclus::DbTypes)6>(boost::spirit::basic_hold_any<char> const*)
+ cyclus::Digest cyclus::Hdf5Back::VLWrite<cyclus::Blob, (cyclus::DbTypes)6>(cyclus::Blob const&)
+ cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<int, std::allocator<int> >, (cyclus::DbTypes)43>(boost::spirit::basic_hold_any<char> const*)
+@@ -306,6 +332,8 @@
+ cyclus::ExchangeNode::ExchangeNode(double, bool, std::string)
+ cyclus::ExchangeNode::ExchangeNode(double, bool, std::string, int)
+ cyclus::ExchangeNode::~ExchangeNode()
++cyclus::ExchangeNodeGroup*&& std::forward<cyclus::ExchangeNodeGroup*&&>(std::remove_reference<cyclus::ExchangeNodeGroup*&&>::type&)
++cyclus::ExchangeNodeGroup*&& std::forward<cyclus::ExchangeNodeGroup*>(std::remove_reference<cyclus::ExchangeNodeGroup*>::type&)
+ cyclus::ExchangeNodeGroup::AddCapacity(double)
+ cyclus::ExchangeNodeGroup::AddExchangeNode(boost::shared_ptr<cyclus::ExchangeNode>)
+ cyclus::ExchangeNodeGroup::AddExclGroup(std::vector<boost::shared_ptr<cyclus::ExchangeNode>, std::allocator<boost::shared_ptr<cyclus::ExchangeNode> > >&)
+@@ -504,6 +532,7 @@
+ cyclus::MockSim::GetProduct(int)
+ cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int)
+ cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int, int)
++cyclus::MockSim::MockSim(int)
+ cyclus::MockSim::Run()
+ cyclus::MockSim::db()
+ cyclus::MockSim::~MockSim()
+@@ -524,7 +553,7 @@
+ cyclus::PrefixInjector::PrefixInjector(cyclus::QueryableBackend*, std::string)
+ cyclus::PrefixInjector::Query(std::string, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
+ cyclus::PrefixInjector::Tables()
+-cyclus::PrefixInjector::operator=(cyclus::PrefixInjector const&)
++cyclus::PrefixInjector::operator=(cyclus::PrefixInjector&&)
+ cyclus::PrefixInjector::~PrefixInjector()
+ cyclus::Product::Absorb(boost::shared_ptr<cyclus::Product>)
+ cyclus::Product::Clone() const
+@@ -567,7 +596,7 @@
+ cyclus::QtyCoeffConverter<cyclus::Product>::operator==(cyclus::Converter<cyclus::Product>&) const
+ cyclus::QtyCoeffConverter<cyclus::Product>::~QtyCoeffConverter()
+ cyclus::QueryResult::QueryResult()
+-cyclus::QueryResult::operator=(cyclus::QueryResult const&)
++cyclus::QueryResult::operator=(cyclus::QueryResult&&)
+ cyclus::QueryResult::~QueryResult()
+ cyclus::QueryableBackend::QueryableBackend()
+ cyclus::QueryableBackend::operator=(cyclus::QueryableBackend const&)
+@@ -612,6 +641,8 @@
+ cyclus::Report(OsiSolverInterface*)
+ cyclus::ReportProg(OsiSolverInterface*)
+ cyclus::ReqPrefComp(cyclus::Arc const&, cyclus::Arc const&)
++cyclus::Request<cyclus::Material>*&& std::forward<cyclus::Request<cyclus::Material>*&&>(std::remove_reference<cyclus::Request<cyclus::Material>*&&>::type&)
++cyclus::Request<cyclus::Material>*&& std::forward<cyclus::Request<cyclus::Material>*>(std::remove_reference<cyclus::Request<cyclus::Material>*>::type&)
+ cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
+ cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
+ cyclus::Request<cyclus::Material>::commodity() const
+@@ -621,6 +652,8 @@
+ cyclus::Request<cyclus::Material>::requester() const
+ cyclus::Request<cyclus::Material>::target() const
+ cyclus::Request<cyclus::Material>::~Request()
++cyclus::Request<cyclus::Product>*&& std::forward<cyclus::Request<cyclus::Product>*&&>(std::remove_reference<cyclus::Request<cyclus::Product>*&&>::type&)
++cyclus::Request<cyclus::Product>*&& std::forward<cyclus::Request<cyclus::Product>*>(std::remove_reference<cyclus::Request<cyclus::Product>*>::type&)
+ cyclus::Request<cyclus::Product>::commodity() const
+ cyclus::Request<cyclus::Product>::exclusive() const
+ cyclus::Request<cyclus::Product>::portfolio() const
+@@ -665,8 +698,10 @@
+ cyclus::ResourceExchange<cyclus::Material>::AddRequests_(cyclus::Trader*)
+ cyclus::ResourceExchange<cyclus::Material>::AdjustAll()
+ cyclus::ResourceExchange<cyclus::Material>::AdjustPrefs_(cyclus::Trader*)
++cyclus::ResourceExchange<cyclus::Material>::InitTraders()
+ cyclus::ResourceExchange<cyclus::Material>::ResourceExchange(cyclus::Context*)
+ cyclus::ResourceExchange<cyclus::Material>::ex_ctx()
++cyclus::ResourceExchange<cyclus::Material>::trader_compare::operator()(cyclus::Trader*, cyclus::Trader*) const
+ cyclus::ResourceExchange<cyclus::Material>::~ResourceExchange()
+ cyclus::ResourceExchange<cyclus::Product>::AddAllBids()
+ cyclus::ResourceExchange<cyclus::Product>::AddAllRequests()
+@@ -674,8 +709,10 @@
+ cyclus::ResourceExchange<cyclus::Product>::AddRequests_(cyclus::Trader*)
+ cyclus::ResourceExchange<cyclus::Product>::AdjustAll()
+ cyclus::ResourceExchange<cyclus::Product>::AdjustPrefs_(cyclus::Trader*)
++cyclus::ResourceExchange<cyclus::Product>::InitTraders()
+ cyclus::ResourceExchange<cyclus::Product>::ResourceExchange(cyclus::Context*)
+ cyclus::ResourceExchange<cyclus::Product>::ex_ctx()
++cyclus::ResourceExchange<cyclus::Product>::trader_compare::operator()(cyclus::Trader*, cyclus::Trader*) const
+ cyclus::ResourceExchange<cyclus::Product>::~ResourceExchange()
+ cyclus::SecondLT<std::pair<std::string, double> >::operator()(std::pair<std::string, double> const&, std::pair<std::string, double> const&) const
+ cyclus::Sha1::Clear()
+@@ -704,6 +741,7 @@
+ cyclus::SimInfo::SimInfo(int, int, int, std::string)
+ cyclus::SimInfo::SimInfo(int, int, int, std::string, std::string)
+ cyclus::SimInfo::operator=(cyclus::SimInfo const&)
++cyclus::SimInfo::operator=(cyclus::SimInfo&&)
+ cyclus::SimInfo::~SimInfo()
+ cyclus::SimInit::Branch(cyclus::QueryableBackend*, boost::uuids::uuid, int, boost::uuids::uuid)
+ cyclus::SimInit::BuildMaterial(cyclus::QueryableBackend*, int)
+@@ -797,9 +835,13 @@
+ cyclus::Timer::dur()
+ cyclus::Timer::time()
+ cyclus::Timer::~Timer()
++cyclus::Trade<cyclus::Material> const& std::forward<cyclus::Trade<cyclus::Material> const&>(std::remove_reference<cyclus::Trade<cyclus::Material> const&>::type&)
+ cyclus::Trade<cyclus::Material> cyclus::BackTranslateMatch<cyclus::Material>(cyclus::ExchangeTranslationContext<cyclus::Material> const&, std::pair<cyclus::Arc, double> const&)
++cyclus::Trade<cyclus::Material>&& std::forward<cyclus::Trade<cyclus::Material> >(std::remove_reference<cyclus::Trade<cyclus::Material> >::type&)
+ cyclus::Trade<cyclus::Material>::Trade()
++cyclus::Trade<cyclus::Product> const& std::forward<cyclus::Trade<cyclus::Product> const&>(std::remove_reference<cyclus::Trade<cyclus::Product> const&>::type&)
+ cyclus::Trade<cyclus::Product> cyclus::BackTranslateMatch<cyclus::Product>(cyclus::ExchangeTranslationContext<cyclus::Product> const&, std::pair<cyclus::Arc, double> const&)
++cyclus::Trade<cyclus::Product>&& std::forward<cyclus::Trade<cyclus::Product> >(std::remove_reference<cyclus::Trade<cyclus::Product> >::type&)
+ cyclus::Trade<cyclus::Product>::Trade()
+ cyclus::TradeExecutionContext<cyclus::Material>::TradeExecutionContext()
+ cyclus::TradeExecutionContext<cyclus::Material>::~TradeExecutionContext()
+@@ -811,6 +853,9 @@
+ cyclus::TradeExecutor<cyclus::Product>::RecordTrades(cyclus::Context*)
+ cyclus::TradeExecutor<cyclus::Product>::TradeExecutor(std::vector<cyclus::Trade<cyclus::Product>, std::allocator<cyclus::Trade<cyclus::Product> > > const&)
+ cyclus::TradeExecutor<cyclus::Product>::~TradeExecutor()
++cyclus::Trader*& std::forward<cyclus::Trader*&>(std::remove_reference<cyclus::Trader*&>::type&)
++cyclus::Trader*&& std::forward<cyclus::Trader*&&>(std::remove_reference<cyclus::Trader*&&>::type&)
++cyclus::Trader*&& std::forward<cyclus::Trader*>(std::remove_reference<cyclus::Trader*>::type&)
+ cyclus::Trader::AcceptMatlTrades(std::vector<std::pair<cyclus::Trade<cyclus::Material>, boost::shared_ptr<cyclus::Material> >, std::allocator<std::pair<cyclus::Trade<cyclus::Material>, boost::shared_ptr<cyclus::Material> > > > const&)
+ cyclus::Trader::AcceptProductTrades(std::vector<std::pair<cyclus::Trade<cyclus::Product>, boost::shared_ptr<cyclus::Product> >, std::allocator<std::pair<cyclus::Trade<cyclus::Product>, boost::shared_ptr<cyclus::Product> > > > const&)
+ cyclus::Trader::AdjustMatlPrefs(std::map<cyclus::Request<cyclus::Material>*, std::map<cyclus::Bid<cyclus::Material>*, double, std::less<cyclus::Bid<cyclus::Material>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Material>* const, double> > >, std::less<cyclus::Request<cyclus::Material>*>, std::allocator<std::pair<cyclus::Request<cyclus::Material>* const, std::map<cyclus::Bid<cyclus::Material>*, double, std::less<cyclus::Bid<cyclus::Material>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Material>* const, double> > > > > >&)
+@@ -837,6 +882,8 @@
+ cyclus::ValueError::ValueError(cyclus::ValueError const&)
+ cyclus::ValueError::ValueError(std::string)
+ cyclus::ValueError::~ValueError()
++cyclus::Warnings&& std::forward<cyclus::Warnings&&>(std::remove_reference<cyclus::Warnings&&>::type&)
++cyclus::Warnings&& std::forward<cyclus::Warnings>(std::remove_reference<cyclus::Warnings>::type&)
+ cyclus::XMLFileLoader::BuildAgent(std::string, cyclus::Agent*)
+ cyclus::XMLFileLoader::LoadControlParams()
+ cyclus::XMLFileLoader::LoadInitialAgents()
+@@ -885,12 +932,18 @@
+ cyclus::toolkit::Assays::Tails() const
+ cyclus::toolkit::BasicFunctionFactory::BasicFunctionFactory()
+ cyclus::toolkit::BasicFunctionFactory::GetFunctionPtr(std::string, std::string)
++cyclus::toolkit::BuildOrder&& std::forward<cyclus::toolkit::BuildOrder>(std::remove_reference<cyclus::toolkit::BuildOrder>::type&)
+ cyclus::toolkit::BuildOrder::BuildOrder(int, cyclus::toolkit::Builder*, cyclus::toolkit::CommodityProducer*)
+ cyclus::toolkit::Builder::producers() const
+ cyclus::toolkit::BuildingManager::MakeBuildDecision(cyclus::toolkit::Commodity&, double)
++cyclus::toolkit::CommodInfo const& std::forward<cyclus::toolkit::CommodInfo const&>(std::remove_reference<cyclus::toolkit::CommodInfo const&>::type&)
++cyclus::toolkit::CommodInfo&& std::forward<cyclus::toolkit::CommodInfo>(std::remove_reference<cyclus::toolkit::CommodInfo>::type&)
+ cyclus::toolkit::CommodInfo::CommodInfo(double, double)
++cyclus::toolkit::Commodity const& std::forward<cyclus::toolkit::Commodity const&>(std::remove_reference<cyclus::toolkit::Commodity const&>::type&)
++cyclus::toolkit::Commodity&& std::forward<cyclus::toolkit::Commodity>(std::remove_reference<cyclus::toolkit::Commodity>::type&)
+ cyclus::toolkit::Commodity::Commodity()
+ cyclus::toolkit::Commodity::Commodity(cyclus::toolkit::Commodity const&)
++cyclus::toolkit::Commodity::Commodity(cyclus::toolkit::Commodity&&)
+ cyclus::toolkit::Commodity::Commodity(std::string)
+ cyclus::toolkit::Commodity::name() const
+ cyclus::toolkit::Commodity::operator!=(cyclus::toolkit::Commodity const&) const
+@@ -920,7 +973,6 @@
+ cyclus::toolkit::CommodityRecipeContext::UpdateInRec(std::string, std::string)
+ cyclus::toolkit::CommodityRecipeContext::UpdateRsrc(std::string, boost::shared_ptr<cyclus::Resource>)
+ cyclus::toolkit::CommodityRecipeContext::schema()
+-cyclus::toolkit::ExpFunctionFactory::ExpFunctionFactory()
+ cyclus::toolkit::ExpFunctionFactory::GetFunctionPtr(std::string)
+ cyclus::toolkit::ExpFunctionFactory::~ExpFunctionFactory()
+ cyclus::toolkit::ExponentialFunction::ExponentialFunction(double, double, double)
+@@ -931,7 +983,6 @@
+ cyclus::toolkit::JsonInsertOrAppend(Json::Value&, std::string, Json::Value&)
+ cyclus::toolkit::JsonToXml(std::string)
+ cyclus::toolkit::LinFunctionFactory::GetFunctionPtr(std::string)
+-cyclus::toolkit::LinFunctionFactory::LinFunctionFactory()
+ cyclus::toolkit::LinFunctionFactory::~LinFunctionFactory()
+ cyclus::toolkit::LinearFunction::LinearFunction(double, double)
+ cyclus::toolkit::LinearFunction::Print()
+@@ -994,8 +1045,9 @@
+ cyclus::toolkit::MatlSellPolicy::set_throughput(double)
+ cyclus::toolkit::MatlSellPolicy::~MatlSellPolicy()
+ cyclus::toolkit::PiecewiseFunction::PiecewiseFunction()
++cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo&& std::forward<cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo>(std::remove_reference<cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo>::type&)
+ cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::PiecewiseFunctionInfo(boost::shared_ptr<cyclus::toolkit::SymFunction>, double, double)
+-cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::PiecewiseFunctionInfo(cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo const&)
++cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::PiecewiseFunctionInfo(cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo&&)
+ cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::~PiecewiseFunctionInfo()
+ cyclus::toolkit::PiecewiseFunction::Print()
+ cyclus::toolkit::PiecewiseFunction::value(double)
+
+--------------------- >> end captured stdout << ----------------------
+
+----------------------------------------------------------------------
+Ran 1 test in 0.224s
+
+FAILED (failures=1)

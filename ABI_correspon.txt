@@ -1,0 +1,740 @@
+-cyclus::Agent::GetTreePrintOuts(cyclus::Agent*)
++cyclus::Agent::GetTreePrintOuts[abi:cxx11](cyclus::Agent*)
+ 
+-cyclus::Agent::InformErrorMsg(std::string)
++cyclus::Agent::InformErrorMsg(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Agent::PrintChildren()
++cyclus::Agent::PrintChildren[abi:cxx11]()
+ 
+-cyclus::Agent::kind() const
++cyclus::Agent::kind[abi:cxx11]() const
+ 
+-cyclus::Agent::prototype() const
++cyclus::Agent::prototype[abi:cxx11]() const
+ 
+-cyclus::Agent::schema()
++cyclus::Agent::schema[abi:cxx11]()
+ 
+-cyclus::Agent::spec()
++cyclus::Agent::spec[abi:cxx11]()
+ 
+-cyclus::Agent::spec(std::string)
++cyclus::Agent::spec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Agent::str()
++cyclus::Agent::str[abi:cxx11]()
+ 
+-cyclus::AgentSpec::AgentSpec(std::string)
++cyclus::AgentSpec::AgentSpec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::AgentSpec::AgentSpec(std::string, std::string, std::string, std::string)
++cyclus::AgentSpec::AgentSpec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::AgentSpec::LibPath()
++cyclus::AgentSpec::LibPath[abi:cxx11]()
+ 
+-cyclus::AgentSpec::Sanitize()
++cyclus::AgentSpec::Sanitize[abi:cxx11]()
+ 
+-cyclus::AgentSpec::agent()
++cyclus::AgentSpec::agent[abi:cxx11]()
+ 
+-cyclus::AgentSpec::alias()
++cyclus::AgentSpec::alias[abi:cxx11]()
+ 
+-cyclus::AgentSpec::str()
++cyclus::AgentSpec::str[abi:cxx11]()
+ 
+-cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
++cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool, double)
+ 
+-cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
++cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool, double)
+ 
+-cyclus::BidPortfolio<cyclus::Material>::AddBid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, bool)
++cyclus::BidPortfolio<cyclus::Material>::AddBid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, bool, double)
+ 
+-cyclus::Blob::Blob(std::string)
++cyclus::Blob::Blob(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Blob::str() const
++cyclus::Blob::str[abi:cxx11]() const
+ 
+-cyclus::BuildFlatMasterSchema(std::string, std::string)
++cyclus::BuildFlatMasterSchema(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::BuildMasterSchema(std::string, std::string)
++cyclus::BuildMasterSchema(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::CastError::CastError(std::string)
++cyclus::CastError::CastError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Cond::Cond(std::string, std::string, boost::spirit::basic_hold_any<char>)
++cyclus::Cond::Cond(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::spirit::basic_hold_any<char>)
+ 
+-cyclus::Cond::operator=(cyclus::Cond const&)
+ 
+-cyclus::CondInjector::ColumnTypes(std::string)
++cyclus::CondInjector::ColumnTypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::CondInjector::Query(std::string, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
++cyclus::CondInjector::Query(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
+ 
+-cyclus::CondInjector::Tables()
++cyclus::CondInjector::Tables[abi:cxx11]()
+ 
+-cyclus::Context::AddPrototype(std::string, cyclus::Agent*)
++cyclus::Context::AddPrototype(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, cyclus::Agent*)
+ 
+-cyclus::Context::AddRecipe(std::string, boost::shared_ptr<cyclus::Composition>)
++cyclus::Context::AddRecipe(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<cyclus::Composition>)
+ 
+-cyclus::Context::GetRecipe(std::string)
++cyclus::Context::GetRecipe(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Context::NewDatum(std::string)
++cyclus::Context::NewDatum(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Context::SchedBuild(cyclus::Agent*, std::string, int)
+ 
+-cyclus::Datum::Datum(cyclus::Recorder*, std::string)
+ 
+-cyclus::Datum::title()
++cyclus::Datum::title[abi:cxx11]()
+ 
+-cyclus::DbInit::NewDatum(std::string)
++cyclus::DbInit::NewDatum(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<int, std::allocator<int> >, (cyclus::DbTypes)43>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::list<int, std::allocator<int> >, (cyclus::DbTypes)43>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<int, std::allocator<int> >, (cyclus::DbTypes)43>(std::list<int, std::allocator<int> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::list<int, std::allocator<int> >, (cyclus::DbTypes)43>(std::__cxx11::list<int, std::allocator<int> > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<std::string, std::allocator<std::string> >, (cyclus::DbTypes)49>(std::list<std::string, std::allocator<std::string> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)49>(std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<std::string, std::allocator<std::string> >, (cyclus::DbTypes)51>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)51>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<std::string, std::allocator<std::string> >, (cyclus::DbTypes)51>(std::list<std::string, std::allocator<std::string> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)51>(std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > >, (cyclus::DbTypes)89>(std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)89>(std::map<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > >, (cyclus::DbTypes)91>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)91>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > >, (cyclus::DbTypes)91>(std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)91>(std::map<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > >, (cyclus::DbTypes)129>(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, double, std::less<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::pair<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const, double> > >, (cyclus::DbTypes)129>(std::map<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, double, std::less<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::pair<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > >, (cyclus::DbTypes)131>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, double, std::less<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::pair<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const, double> > >, (cyclus::DbTypes)131>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > >, (cyclus::DbTypes)131>(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, double, std::less<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::pair<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const, double> > >, (cyclus::DbTypes)131>(std::map<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, double, std::less<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::pair<std::pair<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >, (cyclus::DbTypes)103>(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > >, (cyclus::DbTypes)103>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >, (cyclus::DbTypes)119>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > >, (cyclus::DbTypes)119>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >, (cyclus::DbTypes)119>(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > >, (cyclus::DbTypes)119>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >, (cyclus::DbTypes)115>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >, (cyclus::DbTypes)115>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >, (cyclus::DbTypes)115>(std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >, (cyclus::DbTypes)115>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >, (cyclus::DbTypes)99>(std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >, (cyclus::DbTypes)99>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)105>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)105>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)107>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)107>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)107>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)107>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)121>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)121>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)121>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)121>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)123>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)123>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)123>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, (cyclus::DbTypes)123>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::string, std::less<std::string>, std::allocator<std::string> >, (cyclus::DbTypes)33>(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)33>(std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::string, std::less<std::string>, std::allocator<std::string> >, (cyclus::DbTypes)35>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)35>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::string, std::less<std::string>, std::allocator<std::string> >, (cyclus::DbTypes)35>(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)35>(std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::string, (cyclus::DbTypes)5>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, (cyclus::DbTypes)5>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::string, (cyclus::DbTypes)5>(std::string const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, (cyclus::DbTypes)5>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::string, std::allocator<std::string> >, (cyclus::DbTypes)17>(std::vector<std::string, std::allocator<std::string> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)17>(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::string, std::allocator<std::string> >, (cyclus::DbTypes)19>(boost::spirit::basic_hold_any<char> const*)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)19>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::string, std::allocator<std::string> >, (cyclus::DbTypes)19>(std::vector<std::string, std::allocator<std::string> > const&)
++cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, (cyclus::DbTypes)19>(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::DiscoverArchetypes(std::string)
++cyclus::DiscoverArchetypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::DiscoverSpecs(std::string, std::string)
++cyclus::DiscoverSpecs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::DiscoverSpecsInCyclusPath()
++cyclus::DiscoverSpecsInCyclusPath[abi:cxx11]()
+ 
+-cyclus::DiscoverSpecsInDir(std::string)
++cyclus::DiscoverSpecsInDir(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::DynamicModule::path()
++cyclus::DynamicModule::path[abi:cxx11]()
+ 
+-cyclus::Env::EnvDelimiter()
++cyclus::Env::EnvDelimiter[abi:cxx11]()
+ 
+-cyclus::Env::FindModule(std::string)
++cyclus::Env::FindModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Env::GetBuildPath()
++cyclus::Env::GetBuildPath[abi:cxx11]()
+ 
+-cyclus::Env::GetEnv(std::string)
++cyclus::Env::GetEnv(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Env::GetInstallPath()
++cyclus::Env::GetInstallPath[abi:cxx11]()
+ 
+-cyclus::Env::PathBase(std::string)
++cyclus::Env::PathBase(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Env::PathDelimiter()
++cyclus::Env::PathDelimiter[abi:cxx11]()
+ 
+-cyclus::Env::cyclus_path()
++cyclus::Env::cyclus_path[abi:cxx11]()
+ 
+-cyclus::Env::nuc_data()
++cyclus::Env::nuc_data[abi:cxx11]()
+ 
+-cyclus::Env::rng_schema(bool)
++cyclus::Env::rng_schema[abi:cxx11](bool)
+ 
+-cyclus::Error::Error(std::string)
++cyclus::Error::Error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::ExchangeNode::ExchangeNode(double, bool, std::string)
++cyclus::ExchangeNode::ExchangeNode(double, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::ExchangeNode::ExchangeNode(double, bool, std::string, int)
++cyclus::ExchangeNode::ExchangeNode(double, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)
+ 
+-cyclus::Facility::str()
++cyclus::Facility::str[abi:cxx11]()
+ 
+-cyclus::GreedyPreconditioner::GreedyPreconditioner(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
++cyclus::GreedyPreconditioner::GreedyPreconditioner(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > > const&)
+ 
+-cyclus::GreedyPreconditioner::GreedyPreconditioner(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&, cyclus::GreedyPreconditioner::WgtOrder)
++cyclus::GreedyPreconditioner::GreedyPreconditioner(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > > const&, cyclus::GreedyPreconditioner::WgtOrder)
+ 
+-cyclus::GroupWeight(boost::shared_ptr<cyclus::RequestGroup>, std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >*, std::map<boost::shared_ptr<cyclus::ExchangeNode>, double, std::less<boost::shared_ptr<cyclus::ExchangeNode> >, std::allocator<std::pair<boost::shared_ptr<cyclus::ExchangeNode> const, double> > >*)
++cyclus::GroupWeight(boost::shared_ptr<cyclus::RequestGroup>, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > >*, std::map<boost::shared_ptr<cyclus::ExchangeNode>, double, std::less<boost::shared_ptr<cyclus::ExchangeNode> >, std::allocator<std::pair<boost::shared_ptr<cyclus::ExchangeNode> const, double> > >*)
+ 
+-cyclus::Hdf5Back::ColumnTypes(std::string)
++cyclus::Hdf5Back::ColumnTypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Hdf5Back::FillBuf(std::string, char*, std::vector<cyclus::Datum*, std::allocator<cyclus::Datum*> >&, unsigned long*, unsigned long)
++cyclus::Hdf5Back::FillBuf(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char*, std::vector<cyclus::Datum*, std::allocator<cyclus::Datum*> >&, unsigned long*, unsigned long)
+ 
+-cyclus::Hdf5Back::GetTableInfo(std::string, int, int)
++cyclus::Hdf5Back::GetTableInfo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, int)
+ 
+-cyclus::Hdf5Back::Hdf5Back(std::string)
++cyclus::Hdf5Back::Hdf5Back(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Hdf5Back::InsertVLVal(int, cyclus::DbTypes, cyclus::Digest const&, std::string const&)
++cyclus::Hdf5Back::InsertVLVal(int, cyclus::DbTypes, cyclus::Digest const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+ 
+-cyclus::Hdf5Back::LoadTableTypes(std::string, int, unsigned long long)
++cyclus::Hdf5Back::LoadTableTypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, unsigned long long)
+ 
+-cyclus::Hdf5Back::LoadTableTypes(std::string, unsigned long long)
++cyclus::Hdf5Back::LoadTableTypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long long)
+ 
+-cyclus::Hdf5Back::Name()
++cyclus::Hdf5Back::Name[abi:cxx11]()
+ 
+-cyclus::Hdf5Back::Query(std::string, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
++cyclus::Hdf5Back::Query(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
+ 
+-cyclus::Hdf5Back::Tables()
++cyclus::Hdf5Back::Tables[abi:cxx11]()
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::list<int, std::allocator<int> > const&)
++cyclus::Hdf5Back::VLValToBuf(std::__cxx11::list<int, std::allocator<int> > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::list<std::string, std::allocator<std::string> > const&)
++cyclus::Hdf5Back::VLValToBuf(std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
++cyclus::Hdf5Back::VLValToBuf(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > > const&)
++cyclus::Hdf5Back::VLValToBuf(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
++cyclus::Hdf5Back::VLValToBuf(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
++cyclus::Hdf5Back::VLValToBuf(std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::vector<std::string, std::allocator<std::string> > const&)
++cyclus::Hdf5Back::VLValToBuf(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::IOError::IOError(std::string)
++cyclus::IOError::IOError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::InfileTree::GetElementName(int)
++cyclus::InfileTree::GetElementName[abi:cxx11](int)
+ 
+-cyclus::InfileTree::GetEngineFromQuery(std::string, int)
++cyclus::InfileTree::GetEngineFromQuery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)
+ 
+-cyclus::InfileTree::GetString(std::string, int)
++cyclus::InfileTree::GetString(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)
+ 
+-cyclus::InfileTree::NMatches(std::string)
++cyclus::InfileTree::NMatches(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::InfileTree::SubTree(std::string, int)
++cyclus::InfileTree::SubTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)
+ 
+-cyclus::InitAgent(cyclus::Agent*, std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, cyclus::Recorder*, cyclus::SqliteBack*)
+ 
+-cyclus::Institution::InitInv(std::map<std::string, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > > > > >&)
++cyclus::Institution::InitInv(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > > > > >&)
+ 
+-cyclus::Institution::SnapshotInv()
++cyclus::Institution::SnapshotInv[abi:cxx11]()
+ 
+-cyclus::Institution::str()
++cyclus::Institution::str[abi:cxx11]()
+ 
+-cyclus::KeyError::KeyError(std::string)
++cyclus::KeyError::KeyError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::LoadRawStringstreamFromFile(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, std::string)
++cyclus::LoadRawStringstreamFromFile(std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::LoadStringstreamFromFile(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, std::string)
++cyclus::LoadStringstreamFromFile(std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Logger::AddLevel(cyclus::LogLevel, std::string)
+ 
+-cyclus::Logger::Get(cyclus::LogLevel, std::string)
+ 
+-cyclus::Logger::ToLogLevel(std::string)
++cyclus::Logger::ToLogLevel(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Logger::ToString(cyclus::LogLevel)
++cyclus::Logger::ToString[abi:cxx11](cyclus::LogLevel)
+ 
+-cyclus::Logger::level_to_string
++cyclus::Logger::level_to_string[abi:cxx11]
+ 
+-cyclus::Logger::string_to_level
++cyclus::Logger::string_to_level[abi:cxx11]
+ 
+-cyclus::Material::kType
++cyclus::Material::kType[abi:cxx11]
+ 
+-cyclus::Material::type() const
++cyclus::Material::type[abi:cxx11]() const
+ 
+-cyclus::Material::units() const
++cyclus::Material::units[abi:cxx11]() const
+ 
+-cyclus::MockAgent::Finalize()
++cyclus::MockAgent::Finalize[abi:cxx11]()
+ 
+-cyclus::MockAgent::commod(std::string)
++cyclus::MockAgent::commod(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::MockAgent::recipe(std::string)
++cyclus::MockAgent::recipe(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::MockSim::AddRecipe(std::string, boost::shared_ptr<cyclus::Composition>)
++cyclus::MockSim::AddRecipe(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<cyclus::Composition>)
+ 
+-cyclus::MockSim::AddSink(std::string)
++cyclus::MockSim::AddSink(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::MockSim::AddSource(std::string)
++cyclus::MockSim::AddSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::MockSim::DummyProto(std::string)
++cyclus::MockSim::DummyProto(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int)
++cyclus::MockSim::MockSim(int)
+ 
+-cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int, int)
++cyclus::MockSim::MockSim(int)
+ 
+-cyclus::NodeWeight(boost::shared_ptr<cyclus::ExchangeNode>, std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >*, double)
++cyclus::NodeWeight(boost::shared_ptr<cyclus::ExchangeNode>, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > >*, double)
+ 
+-cyclus::ParseSpecs(std::string)
++cyclus::ParseSpecs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::PrefixInjector::ColumnTypes(std::string)
++cyclus::PrefixInjector::ColumnTypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::PrefixInjector::PrefixInjector(cyclus::QueryableBackend*, std::string)
+ 
+-cyclus::PrefixInjector::Query(std::string, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
++cyclus::PrefixInjector::Query(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
+ 
+-cyclus::PrefixInjector::Tables()
++cyclus::PrefixInjector::Tables[abi:cxx11]()
+ 
+-cyclus::PrefixInjector::operator=(cyclus::PrefixInjector const&)
++cyclus::PrefixInjector::operator=(cyclus::PrefixInjector&&)
+ 
+-cyclus::Product::Create(cyclus::Agent*, double, std::string)
++cyclus::Product::Create(cyclus::Agent*, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Product::CreateUntracked(double, std::string)
+ 
+-cyclus::Product::Product(cyclus::Context*, double, std::string)
++cyclus::Product::Product(cyclus::Context*, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Product::kType
++cyclus::Product::kType[abi:cxx11]
+ 
+-cyclus::Product::quality() const
++cyclus::Product::quality[abi:cxx11]() const
+ 
+-cyclus::Product::type() const
++cyclus::Product::type[abi:cxx11]() const
+ 
+-cyclus::Product::units() const
++cyclus::Product::units[abi:cxx11]() const
+ 
+-cyclus::ProgSolver::ProgSolver(std::string, bool)
++cyclus::ProgSolver::ProgSolver(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool)
+ 
+-cyclus::QueryResult::operator=(cyclus::QueryResult const&)
++cyclus::QueryResult::operator=(cyclus::QueryResult&&)
+ 
+-cyclus::Recorder::NewDatum(std::string)
++cyclus::Recorder::NewDatum(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Region::InitInv(std::map<std::string, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > > > > >&)
++cyclus::Region::InitInv(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<boost::shared_ptr<cyclus::Resource>, std::allocator<boost::shared_ptr<cyclus::Resource> > > > > >&)
+ 
+-cyclus::Region::SnapshotInv()
++cyclus::Region::SnapshotInv[abi:cxx11]()
+ 
+-cyclus::Region::str()
++cyclus::Region::str[abi:cxx11]()
+ 
+-cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
++cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
+ 
+-cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
++cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
+ 
+-cyclus::RequestPortfolio<cyclus::Material>::AddRequest(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, std::string, double, bool)
++cyclus::RequestPortfolio<cyclus::Material>::AddRequest(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
+ 
+-cyclus::SecondLT<std::pair<std::string, double> >::operator()(std::pair<std::string, double> const&, std::pair<std::string, double> const&) const
++cyclus::SecondLT<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double> >::operator()(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double> const&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double> const&) const
+ 
+-cyclus::Sha1::Update(std::list<int, std::allocator<int> > const&)
++cyclus::Sha1::Update(std::__cxx11::list<int, std::allocator<int> > const&)
+ 
+-cyclus::Sha1::Update(std::list<std::string, std::allocator<std::string> > const&)
++cyclus::Sha1::Update(std::__cxx11::list<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Sha1::Update(std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > > const&)
+ 
+-cyclus::Sha1::Update(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
+ 
+-cyclus::Sha1::Update(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
++cyclus::Sha1::Update(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > > const&)
+ 
+-cyclus::Sha1::Update(std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > > const&)
++cyclus::Sha1::Update(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > > const&)
+ 
+-cyclus::Sha1::Update(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
++cyclus::Sha1::Update(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&)
+ 
+-cyclus::Sha1::Update(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
++cyclus::Sha1::Update(std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::Sha1::Update(std::string const&)
+ 
+-cyclus::Sha1::Update(std::vector<std::string, std::allocator<std::string> > const&)
++cyclus::Sha1::Update(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&)
+ 
+-cyclus::SimInfo::SimInfo(int, boost::uuids::uuid, int, std::string, std::string)
++cyclus::SimInfo::SimInfo(int, boost::uuids::uuid, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SimInfo::SimInfo(int, int, int, std::string)
++cyclus::SimInfo::SimInfo(int, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SimInfo::SimInfo(int, int, int, std::string, std::string)
++cyclus::SimInfo::SimInfo(int, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SimInit::LoadGreedySolver(bool, std::set<std::string, std::less<std::string>, std::allocator<std::string> >)
++cyclus::SimInit::LoadGreedySolver(bool, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >)
+ 
+-cyclus::SimInit::LoadPreconditioner(std::string)
++cyclus::SimInit::LoadPreconditioner(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SolverFactory::SolverFactory(std::string)
++cyclus::SolverFactory::SolverFactory(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SolverFactory::SolverFactory(std::string, double)
++cyclus::SolverFactory::SolverFactory(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double)
+ 
+-cyclus::SqlStatement::SqlStatement(sqlite3*, std::string)
+ 
+-cyclus::SqliteBack::ColumnTypes(std::string)
++cyclus::SqliteBack::ColumnTypes(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SqliteBack::GetTableInfo(std::string)
++cyclus::SqliteBack::GetTableInfo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SqliteBack::Name()
++cyclus::SqliteBack::Name[abi:cxx11]()
+ 
+-cyclus::SqliteBack::Query(std::string, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
++cyclus::SqliteBack::Query(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
+ 
+-cyclus::SqliteBack::SqlType(boost::spirit::basic_hold_any<char>)
++cyclus::SqliteBack::SqlType[abi:cxx11](boost::spirit::basic_hold_any<char>)
+ 
+-cyclus::SqliteBack::SqliteBack(std::string)
++cyclus::SqliteBack::SqliteBack(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SqliteBack::Tables()
++cyclus::SqliteBack::Tables[abi:cxx11]()
+ 
+-cyclus::SqliteDb::Execute(std::string)
++cyclus::SqliteDb::Execute(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SqliteDb::Prepare(std::string)
++cyclus::SqliteDb::Prepare(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SqliteDb::Query(std::string)
++cyclus::SqliteDb::Query(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::SqliteDb::SqliteDb(std::string, bool)
++cyclus::SqliteDb::SqliteDb(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool)
+ 
+-cyclus::StateError::StateError(std::string)
++cyclus::StateError::StateError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::Timer::SchedBuild(cyclus::Agent*, std::string, int)
+ 
+-cyclus::Trader::GetMatlBids(std::map<std::string, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > > > > const&)
++cyclus::Trader::GetMatlBids(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > > > > const&)
+ 
+-cyclus::Trader::GetMatlBids(std::map<std::string, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > > > >&)
++cyclus::Trader::GetMatlBids(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > > > >&)
+ 
+-cyclus::Trader::GetProductBids(std::map<std::string, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> > > > > const&)
++cyclus::Trader::GetProductBids(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> > > > > const&)
+ 
+-cyclus::Trader::GetProductBids(std::map<std::string, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> > > > >&)
++cyclus::Trader::GetProductBids(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<cyclus::Request<cyclus::Product>*, std::allocator<cyclus::Request<cyclus::Product>*> > > > >&)
+ 
+-cyclus::ValidationError::ValidationError(std::string)
++cyclus::ValidationError::ValidationError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::ValueError::ValueError(std::string)
++cyclus::ValueError::ValueError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::XMLFileLoader::BuildAgent(std::string, cyclus::Agent*)
++cyclus::XMLFileLoader::BuildAgent(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, cyclus::Agent*)
+ 
+-cyclus::XMLFileLoader::ProcessCommodities(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >*)
++cyclus::XMLFileLoader::ProcessCommodities(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, double> > >*)
+ 
+-cyclus::XMLFileLoader::XMLFileLoader(cyclus::Recorder*, cyclus::QueryableBackend*, std::string, std::string)
++cyclus::XMLFileLoader::XMLFileLoader(cyclus::Recorder*, cyclus::QueryableBackend*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::XMLFileLoader::master_schema()
++cyclus::XMLFileLoader::master_schema[abi:cxx11]()
+ 
+-cyclus::XMLFlatLoader::master_schema()
++cyclus::XMLFlatLoader::master_schema[abi:cxx11]()
+ 
+-cyclus::XMLParser::Init(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> > const&)
++cyclus::XMLParser::Init(std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> > const&)
+ 
+-cyclus::XMLParser::Validate(std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> > const&)
++cyclus::XMLParser::Validate(std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> > const&)
+ 
+-cyclus::split(std::string const&, char)
++cyclus::split(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char)
+ 
+-cyclus::toolkit::AddJsonToXml(Json::Value&, std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, std::string, std::string)
+ 
+-cyclus::toolkit::AddXmlToJson(cyclus::InfileTree*, Json::Value&, std::string)
++cyclus::toolkit::AddXmlToJson(cyclus::InfileTree*, Json::Value&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::BasicFunctionFactory::GetFunctionPtr(std::string, std::string)
++cyclus::toolkit::BasicFunctionFactory::GetFunctionPtr(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::Commodity::Commodity(std::string)
++cyclus::toolkit::Commodity::Commodity(cyclus::toolkit::Commodity&&)
++cyclus::toolkit::Commodity::Commodity(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::Commodity::name() const
++cyclus::toolkit::Commodity::name[abi:cxx11]() const
+ 
+-cyclus::toolkit::CommodityRecipeContext::AddInCommod(std::string, std::string, std::string, std::string)
++cyclus::toolkit::CommodityRecipeContext::AddInCommod(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::CommodityRecipeContext::AddRsrc(std::string, boost::shared_ptr<cyclus::Resource>)
++cyclus::toolkit::CommodityRecipeContext::AddRsrc(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<cyclus::Resource>)
+ 
+-cyclus::toolkit::CommodityRecipeContext::UpdateInRec(std::string, std::string)
++cyclus::toolkit::CommodityRecipeContext::UpdateInRec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::CommodityRecipeContext::UpdateRsrc(std::string, boost::shared_ptr<cyclus::Resource>)
++cyclus::toolkit::CommodityRecipeContext::UpdateRsrc(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<cyclus::Resource>)
+ 
+-cyclus::toolkit::CommodityRecipeContext::schema()
++cyclus::toolkit::CommodityRecipeContext::schema[abi:cxx11]()
+ 
+-cyclus::toolkit::ExpFunctionFactory::ExpFunctionFactory()
+ 
+-cyclus::toolkit::ExpFunctionFactory::GetFunctionPtr(std::string)
++cyclus::toolkit::ExpFunctionFactory::GetFunctionPtr(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::ExponentialFunction::Print()
++cyclus::toolkit::ExponentialFunction::Print[abi:cxx11]()
+ 
+-cyclus::toolkit::JsonInsertOrAppend(Json::Value&, std::string, Json::Value&)
+ 
+-cyclus::toolkit::JsonToXml(std::string)
++cyclus::toolkit::JsonToXml(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::LinFunctionFactory::GetFunctionPtr(std::string)
++cyclus::toolkit::LinFunctionFactory::GetFunctionPtr(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::LinFunctionFactory::LinFunctionFactory()
+ 
+-cyclus::toolkit::LinearFunction::Print()
++cyclus::toolkit::LinearFunction::Print[abi:cxx11]()
+ 
+-cyclus::toolkit::MatQuery::atom_frac(std::string)
++cyclus::toolkit::MatQuery::atom_frac(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatQuery::mass(std::string)
++cyclus::toolkit::MatQuery::mass(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
++cyclus::toolkit::MatQuery::mass_frac(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatQuery::mass_frac(std::string)
++cyclus::toolkit::MatQuery::mass_frac(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatQuery::moles(std::string)
++cyclus::toolkit::MatQuery::moles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string)
++cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, double)
++cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, double, double)
++cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, double, double, double, double)
++cyclus::toolkit::MatlBuyPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, double, double, double)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Set(std::string)
++cyclus::toolkit::MatlBuyPolicy::Set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Set(std::string, boost::shared_ptr<cyclus::Composition>)
++cyclus::toolkit::MatlBuyPolicy::Set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatlBuyPolicy::Set(std::string, boost::shared_ptr<cyclus::Composition>, double)
++cyclus::toolkit::MatlBuyPolicy::Set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<cyclus::Composition>, double)
+ 
+-cyclus::toolkit::MatlSellPolicy::GetMatlBids(std::map<std::string, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > > > >&)
++cyclus::toolkit::MatlSellPolicy::GetMatlBids(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > > > >&)
+ 
+-cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string)
++cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, bool)
++cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool)
+ 
+-cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, double)
++cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double)
+ 
+-cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, double, bool)
++cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, bool)
+ 
+-cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::string, double, bool, double)
++cyclus::toolkit::MatlSellPolicy::Init(cyclus::Agent*, cyclus::toolkit::ResBuf<cyclus::Material>*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, bool, double)
+ 
+-cyclus::toolkit::MatlSellPolicy::Set(std::string)
++cyclus::toolkit::MatlSellPolicy::Set(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::PiecewiseFunctionInfo(cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo const&)
++cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::PiecewiseFunctionInfo(cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo&&)
+ 
+-cyclus::toolkit::PiecewiseFunction::Print()
++cyclus::toolkit::PiecewiseFunction::Print[abi:cxx11]()
+ 
+-cyclus::toolkit::PiecewiseFunctionFactory::GetFunctionPtr(std::string)
++cyclus::toolkit::PiecewiseFunctionFactory::GetFunctionPtr(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::toolkit::XmlToJson(std::string)
++cyclus::toolkit::XmlToJson(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 
+-cyclus::warn_prefix
++cyclus::warn_prefix[abi:cxx11]
++cyclus::warn_prefixes[abi:cxx11]()
+ 
+-cyclus::warn_prefixes()
++cyclus::warn_prefixes[abi:cxx11]()
+ 

@@ -1,0 +1,72 @@
+-cyclus::Cond::operator=(cyclus::Cond const&)
+
+-cyclus::Context::SchedBuild(cyclus::Agent*, std::string, int)
+ 
+-cyclus::Datum::Datum(cyclus::Recorder*, std::string)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > >, (cyclus::DbTypes)131>(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >, (cyclus::DbTypes)103>(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >, (cyclus::DbTypes)119>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >, (cyclus::DbTypes)119>(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >, (cyclus::DbTypes)115>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >, (cyclus::DbTypes)115>(std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > >, (cyclus::DbTypes)99>(std::map<std::string, int, std::less<std::string>, std::allocator<std::pair<std::string const, int> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)105>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)107>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)107>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)121>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)121>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)123>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >, (cyclus::DbTypes)123>(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::string, std::less<std::string>, std::allocator<std::string> >, (cyclus::DbTypes)33>(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::string, std::less<std::string>, std::allocator<std::string> >, (cyclus::DbTypes)35>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::set<std::string, std::less<std::string>, std::allocator<std::string> >, (cyclus::DbTypes)35>(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::string, (cyclus::DbTypes)5>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::string, (cyclus::DbTypes)5>(std::string const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::string, std::allocator<std::string> >, (cyclus::DbTypes)17>(std::vector<std::string, std::allocator<std::string> > const&)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::string, std::allocator<std::string> >, (cyclus::DbTypes)19>(boost::spirit::basic_hold_any<char> const*)
+ 
+-cyclus::Digest cyclus::Hdf5Back::VLWrite<std::vector<std::string, std::allocator<std::string> >, (cyclus::DbTypes)19>(std::vector<std::string, std::allocator<std::string> > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > > const&)
+ 
+-cyclus::Hdf5Back::VLValToBuf(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
+ 
+-cyclus::InitAgent(cyclus::Agent*, std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, cyclus::Recorder*, cyclus::SqliteBack*)
+ 
+-cyclus::Logger::AddLevel(cyclus::LogLevel, std::string)
+ 
+-cyclus::Logger::Get(cyclus::LogLevel, std::string)
+ 
+-cyclus::SecondLT<std::pair<std::string, double> >::operator()(std::pair<std::string, double> const&, std::pair<std::string, double> const&) const
+ 
+-cyclus::Sha1::Update(std::map<int, std::string, std::less<int>, std::allocator<std::pair<int const, std::string> > > const&)
+ 
+-cyclus::Sha1::Update(std::map<std::pair<int, std::string>, double, std::less<std::pair<int, std::string> >, std::allocator<std::pair<std::pair<int, std::string> const, double> > > const&)
+ 
+-cyclus::Sha1::Update(std::string const&)
+ 
+-cyclus::Timer::SchedBuild(cyclus::Agent*, std::string, int)
+ 
+-cyclus::toolkit::AddJsonToXml(Json::Value&, std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&, std::string, std::string)
+ 

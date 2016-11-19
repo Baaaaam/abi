@@ -1,0 +1,8 @@
+-cyclus::Cond::operator=(cyclus::Cond const&)
+-cyclus::PrefixInjector::operator=(cyclus::PrefixInjector const&)
+-cyclus::ProgTranslator::Context::Context()
+-cyclus::ProgTranslator::Context::~Context()
+-cyclus::QueryResult::operator=(cyclus::QueryResult const&)
+-cyclus::toolkit::ExpFunctionFactory::ExpFunctionFactory()
+-cyclus::toolkit::LinFunctionFactory::LinFunctionFactory()
+-cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo::PiecewiseFunctionInfo(cyclus::toolkit::PiecewiseFunction::PiecewiseFunctionInfo const&)

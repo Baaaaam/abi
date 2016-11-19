@@ -1,0 +1,76 @@
+F
+======================================================================
+FAIL: test_abi.test_abi_stability
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "/home/cnerg/cyclus/tests/test_abi.py", line 32, in test_abi_stability
+    assert_true(obs)
+AssertionError: False is not true
+-------------------- >> begin captured stdout << ---------------------
+--- Cyclus Core 1.3.0 (1.3.0-rc6)	2015-05-21 15:51:39 -0500
++++ Cyclus Core 1.3.0 (1.4.0-rc2)	2015-11-03 06:47:41 +0100
+@@ -33,6 +33,7 @@
+ cyclus::Agent::spec()
+ cyclus::Agent::spec(std::string)
+ cyclus::Agent::str()
++cyclus::Agent::version()
+ cyclus::Agent::~Agent()
+ cyclus::AgentSpec::AgentSpec()
+ cyclus::AgentSpec::AgentSpec(cyclus::AgentSpec const&)
+@@ -120,7 +121,8 @@
+ cyclus::Composition::CreateFromAtom(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >)
+ cyclus::Composition::CreateFromMass(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >)
+ cyclus::Composition::Decay(int)
+-cyclus::Composition::NewDecay(int)
++cyclus::Composition::Decay(int, unsigned long)
++cyclus::Composition::NewDecay(int, unsigned long)
+ cyclus::Composition::Record(cyclus::Context*)
+ cyclus::Composition::atom()
+ cyclus::Composition::id()
+@@ -136,6 +138,7 @@
+ cyclus::CondInjector::Tables()
+ cyclus::CondInjector::~CondInjector()
+ cyclus::Context::AddPrototype(std::string, cyclus::Agent*)
++cyclus::Context::AddPrototype(std::string, cyclus::Agent*, bool)
+ cyclus::Context::AddRecipe(std::string, boost::shared_ptr<cyclus::Composition>)
+ cyclus::Context::Context(cyclus::Timer*, cyclus::Recorder*)
+ cyclus::Context::DelAgent(cyclus::Agent*)
+@@ -504,6 +507,7 @@
+ cyclus::MockSim::GetProduct(int)
+ cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int)
+ cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int, int)
++cyclus::MockSim::MockSim(int)
+ cyclus::MockSim::Run()
+ cyclus::MockSim::db()
+ cyclus::MockSim::~MockSim()
+@@ -665,8 +669,10 @@
+ cyclus::ResourceExchange<cyclus::Material>::AddRequests_(cyclus::Trader*)
+ cyclus::ResourceExchange<cyclus::Material>::AdjustAll()
+ cyclus::ResourceExchange<cyclus::Material>::AdjustPrefs_(cyclus::Trader*)
++cyclus::ResourceExchange<cyclus::Material>::InitTraders()
+ cyclus::ResourceExchange<cyclus::Material>::ResourceExchange(cyclus::Context*)
+ cyclus::ResourceExchange<cyclus::Material>::ex_ctx()
++cyclus::ResourceExchange<cyclus::Material>::trader_compare::operator()(cyclus::Trader*, cyclus::Trader*) const
+ cyclus::ResourceExchange<cyclus::Material>::~ResourceExchange()
+ cyclus::ResourceExchange<cyclus::Product>::AddAllBids()
+ cyclus::ResourceExchange<cyclus::Product>::AddAllRequests()
+@@ -674,8 +680,10 @@
+ cyclus::ResourceExchange<cyclus::Product>::AddRequests_(cyclus::Trader*)
+ cyclus::ResourceExchange<cyclus::Product>::AdjustAll()
+ cyclus::ResourceExchange<cyclus::Product>::AdjustPrefs_(cyclus::Trader*)
++cyclus::ResourceExchange<cyclus::Product>::InitTraders()
+ cyclus::ResourceExchange<cyclus::Product>::ResourceExchange(cyclus::Context*)
+ cyclus::ResourceExchange<cyclus::Product>::ex_ctx()
++cyclus::ResourceExchange<cyclus::Product>::trader_compare::operator()(cyclus::Trader*, cyclus::Trader*) const
+ cyclus::ResourceExchange<cyclus::Product>::~ResourceExchange()
+ cyclus::SecondLT<std::pair<std::string, double> >::operator()(std::pair<std::string, double> const&, std::pair<std::string, double> const&) const
+ cyclus::Sha1::Clear()
+
+--------------------- >> end captured stdout << ----------------------
+
+----------------------------------------------------------------------
+Ran 1 test in 0.204s
+
+FAILED (failures=1)
