@@ -1,12 +1,3 @@
--cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
-+cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool, double)
- 
--cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
-+cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool, double)
- 
--cyclus::BidPortfolio<cyclus::Material>::AddBid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, bool)
-+cyclus::BidPortfolio<cyclus::Material>::AddBid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, bool, double)
- 
 -cyclus::Cond::operator=(cyclus::Cond const&)
  
 -cyclus::PrefixInjector::operator=(cyclus::PrefixInjector const&)
@@ -14,15 +5,6 @@
  
 -cyclus::QueryResult::operator=(cyclus::QueryResult const&)
 +cyclus::QueryResult::operator=(cyclus::QueryResult&&)
- 
--cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
-+cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
- 
--cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
-+cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
- 
--cyclus::RequestPortfolio<cyclus::Material>::AddRequest(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, std::string, double, bool)
-+cyclus::RequestPortfolio<cyclus::Material>::AddRequest(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, std::string, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
  
 -cyclus::toolkit::ExpFunctionFactory::ExpFunctionFactory()
  

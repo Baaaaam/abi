@@ -1,3 +1,4 @@
 -cyclus::Cond::operator=(cyclus::Cond const&)
 -cyclus::toolkit::ExpFunctionFactory::ExpFunctionFactory()
 -cyclus::toolkit::LinFunctionFactory::LinFunctionFactory()
+ 
