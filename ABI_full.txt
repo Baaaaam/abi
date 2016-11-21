@@ -1,6 +1,37 @@
-............................................................................................................................................F....../home/mouginot/work/app/cyclus/cyclus/tests/helper.py:142: VisibleDeprecationWarning: converting an array with ndim > 0 to an index will result in an error in the future
+............................................................................................................................................F              :                                                               
+          .CL:CC CC             _Q     _Q  _Q_Q    _Q    _Q              _Q   
+        CC;CCCCCCCC:C;         /_\)   /_\)/_/\\)  /_\)  /_\)            /_\)  
+        CCCCCCCCCCCCCl       __O|/O___O|/O_OO|/O__O|/O__O|/O____________O|/O__
+     CCCCCCf     iCCCLCC     /////////////////////////////////////////////////
+     iCCCt  ;;;;;.  CCCC                                                      
+    CCCC  ;;;;;;;;;. CClL.                          c                         
+   CCCC ,;;       ;;: CCCC  ;                   : CCCCi                       
+    CCC ;;         ;;  CC   ;;:                CCC`   `C;                     
+  lCCC ;;              CCCC  ;;;:             :CC .;;. C;   ;    :   ;  :;;   
+  CCCC ;.              CCCC    ;;;,           CC ;    ; Ci  ;    :   ;  :  ;  
+   iCC :;               CC       ;;;,        ;C ;       CC  ;    :   ; .      
+  CCCi ;;               CCC        ;;;.      .C ;       tf  ;    :   ;  ;.    
+  CCC  ;;               CCC          ;;;;;;; fC :       lC  ;    :   ;    ;:  
+   iCf ;;               CC         :;;:      tC ;       CC  ;    :   ;     ;  
+  fCCC :;              LCCf      ;;;:         LC :.  ,: C   ;    ;   ; ;   ;  
+  CCCC  ;;             CCCC    ;;;:           CCi `;;` CC.  ;;;; :;.;.  ; ,;  
+    CCl ;;             CC    ;;;;              CCC    CCL                     
+   tCCC  ;;        ;; CCCL  ;;;                  tCCCCC.                      
+    CCCC  ;;     :;; CCCCf  ;                     ,L                          
+     lCCC   ;;;;;;  CCCL                                                      
+     CCCCCC  :;;  fCCCCC                                                      
+      . CCCC     CCCC .                                                       
+       .CCCCCCCCCCCCCi                                                        
+          iCCCCCLCf                                                           
+           .  C. ,                                                            
+              :                                                               
+
+Status: Cyclus run successful!
+Output location: libcyclus-orig.h5
+Simulation ID: b980f4ef-3c1c-4699-9f7c-1d31a040a588
+........../home/mouginot/work/app/cyclus/cyclus/tests/helper.py:142: VisibleDeprecationWarning: converting an array with ndim > 0 to an index will result in an error in the future
   entries[name][agent_entry[idx]['EnterTime']] += 1
-...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
 ======================================================================
 FAIL: test_abi.test_abi_stability
 ----------------------------------------------------------------------
@@ -12,7 +43,7 @@ Traceback (most recent call last):
 AssertionError: False is not true
 -------------------- >> begin captured stdout << ---------------------
 --- Cyclus Core 1.3.0 (1.3.0-rc6)	2015-05-21 15:51:39 -0500
-+++ Cyclus Core 1.4.0 (1.4.0-rc3-154-g73f2714)	2016-10-28 16:51:23 -0500
++++ Cyclus Core 1.4.2 (1.4.2-rc1-4-g895fe00)	2016-11-17 15:34:20 -0600
 @@ -1,3 +1,5 @@
 +cyclus::Agent*& std::forward<cyclus::Agent*&>(std::remove_reference<cyclus::Agent*&>::type&)
 +cyclus::Agent*&& std::forward<cyclus::Agent*>(std::remove_reference<cyclus::Agent*>::type&)
@@ -33,7 +64,7 @@ AssertionError: False is not true
  cyclus::AgentSpec::AgentSpec(cyclus::InfileTree*)
  cyclus::AgentSpec::AgentSpec(std::string)
  cyclus::AgentSpec::AgentSpec(std::string, std::string, std::string, std::string)
-@@ -44,19 +50,30 @@
+@@ -44,33 +50,48 @@
  cyclus::AgentSpec::agent()
  cyclus::AgentSpec::alias()
  cyclus::AgentSpec::operator=(cyclus::AgentSpec const&)
@@ -59,13 +90,17 @@ AssertionError: False is not true
  cyclus::Arc::~Arc()
  cyclus::AvgPref(boost::shared_ptr<cyclus::ExchangeNode>)
  cyclus::AvgPrefComp(boost::shared_ptr<cyclus::ExchangeNode>, boost::shared_ptr<cyclus::ExchangeNode>)
+-cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
+-cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
 +cyclus::Bid<cyclus::Material>*& std::forward<cyclus::Bid<cyclus::Material>*&>(std::remove_reference<cyclus::Bid<cyclus::Material>*&>::type&)
 +cyclus::Bid<cyclus::Material>*&& std::forward<cyclus::Bid<cyclus::Material>*>(std::remove_reference<cyclus::Bid<cyclus::Material>*>::type&)
- cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
- cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool)
++cyclus::Bid<cyclus::Material>::Bid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool, double)
++cyclus::Bid<cyclus::Material>::Create(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::BidPortfolio<cyclus::Material> >, bool, double)
  cyclus::Bid<cyclus::Material>::bidder() const
-@@ -65,6 +82,8 @@
+ cyclus::Bid<cyclus::Material>::exclusive() const
+ cyclus::Bid<cyclus::Material>::offer() const
  cyclus::Bid<cyclus::Material>::portfolio()
++cyclus::Bid<cyclus::Material>::preference() const
  cyclus::Bid<cyclus::Material>::request() const
  cyclus::Bid<cyclus::Material>::~Bid()
 +cyclus::Bid<cyclus::Product>*& std::forward<cyclus::Bid<cyclus::Product>*&>(std::remove_reference<cyclus::Bid<cyclus::Product>*&>::type&)
@@ -73,7 +108,15 @@ AssertionError: False is not true
  cyclus::Bid<cyclus::Product>::bidder() const
  cyclus::Bid<cyclus::Product>::exclusive() const
  cyclus::Bid<cyclus::Product>::offer() const
-@@ -81,12 +100,14 @@
+ cyclus::Bid<cyclus::Product>::portfolio()
++cyclus::Bid<cyclus::Product>::preference() const
+ cyclus::Bid<cyclus::Product>::request() const
+-cyclus::BidPortfolio<cyclus::Material>::AddBid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, bool)
++cyclus::BidPortfolio<cyclus::Material>::AddBid(cyclus::Request<cyclus::Material>*, boost::shared_ptr<cyclus::Material>, cyclus::Trader*, bool, double)
+ cyclus::BidPortfolio<cyclus::Material>::AddConstraint(cyclus::CapacityConstraint<cyclus::Material> const&)
+ cyclus::BidPortfolio<cyclus::Material>::BidPortfolio()
+ cyclus::BidPortfolio<cyclus::Material>::VerifyResponder_(cyclus::Bid<cyclus::Material>*)
+@@ -81,12 +102,14 @@
  cyclus::BidPortfolio<cyclus::Product>::constraints() const
  cyclus::Blob const& boost::spirit::basic_hold_any<char>::cast<cyclus::Blob>() const
  cyclus::Blob cyclus::Hdf5Back::VLRead<cyclus::Blob, (cyclus::DbTypes)6>(char const*)
@@ -88,7 +131,7 @@ AssertionError: False is not true
  cyclus::Blob::operator==(cyclus::Blob const&) const
  cyclus::Blob::operator>(cyclus::Blob const&) const
  cyclus::Blob::operator>=(cyclus::Blob const&) const
-@@ -96,6 +117,7 @@
+@@ -96,6 +119,7 @@
  cyclus::BuildMasterSchema(std::string, std::string)
  cyclus::Capacity(boost::shared_ptr<cyclus::ExchangeNode>, cyclus::Arc const&, double)
  cyclus::Capacity(cyclus::Arc const&, double, double)
@@ -96,7 +139,7 @@ AssertionError: False is not true
  cyclus::CapacityConstraint<cyclus::Material>::CapacityConstraint(cyclus::CapacityConstraint<cyclus::Material> const&)
  cyclus::CapacityConstraint<cyclus::Material>::CapacityConstraint(double)
  cyclus::CapacityConstraint<cyclus::Material>::CapacityConstraint(double, boost::shared_ptr<cyclus::Converter<cyclus::Material> >)
-@@ -104,6 +126,7 @@
+@@ -104,6 +128,7 @@
  cyclus::CapacityConstraint<cyclus::Material>::id() const
  cyclus::CapacityConstraint<cyclus::Material>::next_id_
  cyclus::CapacityConstraint<cyclus::Material>::~CapacityConstraint()
@@ -104,7 +147,7 @@ AssertionError: False is not true
  cyclus::CapacityConstraint<cyclus::Product>::CapacityConstraint(cyclus::CapacityConstraint<cyclus::Product> const&)
  cyclus::CapacityConstraint<cyclus::Product>::CapacityConstraint(double, boost::shared_ptr<cyclus::Converter<cyclus::Product> >)
  cyclus::CapacityConstraint<cyclus::Product>::capacity() const
-@@ -118,14 +141,18 @@
+@@ -118,14 +143,18 @@
  cyclus::Composition::CreateFromAtom(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >)
  cyclus::Composition::CreateFromMass(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >)
  cyclus::Composition::Decay(int)
@@ -124,7 +167,7 @@ AssertionError: False is not true
  cyclus::Cond::~Cond()
  cyclus::CondInjector::ColumnTypes(std::string)
  cyclus::CondInjector::CondInjector(cyclus::QueryableBackend*, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >)
-@@ -133,6 +160,7 @@
+@@ -133,6 +162,7 @@
  cyclus::CondInjector::Tables()
  cyclus::CondInjector::~CondInjector()
  cyclus::Context::AddPrototype(std::string, cyclus::Agent*)
@@ -132,7 +175,7 @@ AssertionError: False is not true
  cyclus::Context::AddRecipe(std::string, boost::shared_ptr<cyclus::Composition>)
  cyclus::Context::Context(cyclus::Timer*, cyclus::Recorder*)
  cyclus::Context::DelAgent(cyclus::Agent*)
-@@ -177,6 +205,10 @@
+@@ -177,6 +207,10 @@
  cyclus::DbInit::DbInit(cyclus::Agent*)
  cyclus::DbInit::DbInit(cyclus::Agent*, bool)
  cyclus::DbInit::NewDatum(std::string)
@@ -143,7 +186,7 @@ AssertionError: False is not true
  cyclus::Decayer::AddNucToList(int)
  cyclus::Decayer::AddNucToMaps(int)
  cyclus::Decayer::BuildDecayMatrix()
-@@ -185,6 +217,9 @@
+@@ -185,6 +219,9 @@
  cyclus::Decayer::GetResult(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > >&)
  cyclus::Decayer::IsNucTracked(int)
  cyclus::Decayer::~Decayer()
@@ -153,7 +196,7 @@ AssertionError: False is not true
  cyclus::Digest cyclus::Hdf5Back::VLWrite<cyclus::Blob, (cyclus::DbTypes)6>(boost::spirit::basic_hold_any<char> const*)
  cyclus::Digest cyclus::Hdf5Back::VLWrite<cyclus::Blob, (cyclus::DbTypes)6>(cyclus::Blob const&)
  cyclus::Digest cyclus::Hdf5Back::VLWrite<std::list<int, std::allocator<int> >, (cyclus::DbTypes)43>(boost::spirit::basic_hold_any<char> const*)
-@@ -258,6 +293,7 @@
+@@ -258,6 +295,7 @@
  cyclus::Env::PathBase(std::string)
  cyclus::Env::PathDelimiter()
  cyclus::Env::SetNucDataPath()
@@ -161,7 +204,7 @@ AssertionError: False is not true
  cyclus::Env::cyclus_path()
  cyclus::Env::nuc_data()
  cyclus::Env::rng_schema(bool)
-@@ -303,19 +339,27 @@
+@@ -303,19 +341,27 @@
  cyclus::ExchangeNode::ExchangeNode(double, bool, std::string)
  cyclus::ExchangeNode::ExchangeNode(double, bool, std::string, int)
  cyclus::ExchangeNode::~ExchangeNode()
@@ -189,7 +232,7 @@ AssertionError: False is not true
  cyclus::ExchangeSolver::~ExchangeSolver()
  cyclus::ExchangeTranslationContext<cyclus::Material>::ExchangeTranslationContext()
  cyclus::ExchangeTranslationContext<cyclus::Material>::~ExchangeTranslationContext()
-@@ -344,6 +388,8 @@
+@@ -344,6 +390,8 @@
  cyclus::Facility::~Facility()
  cyclus::FullBackend::FullBackend()
  cyclus::FullBackend::~FullBackend()
@@ -198,7 +241,7 @@ AssertionError: False is not true
  cyclus::GreedyPreconditioner::Condition(cyclus::ExchangeGraph*)
  cyclus::GreedyPreconditioner::GreedyPreconditioner()
  cyclus::GreedyPreconditioner::GreedyPreconditioner(std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > > const&)
-@@ -368,6 +414,7 @@
+@@ -368,6 +416,7 @@
  cyclus::GroupWeight(boost::shared_ptr<cyclus::RequestGroup>, std::map<std::string, double, std::less<std::string>, std::allocator<std::pair<std::string const, double> > >*, std::map<boost::shared_ptr<cyclus::ExchangeNode>, double, std::less<boost::shared_ptr<cyclus::ExchangeNode> >, std::allocator<std::pair<boost::shared_ptr<cyclus::ExchangeNode> const, double> > >*)
  cyclus::HasInt(OsiSolverInterface*)
  cyclus::Hdf5Back::AppendVLKey(int, cyclus::DbTypes, cyclus::Digest const&)
@@ -206,7 +249,15 @@ AssertionError: False is not true
  cyclus::Hdf5Back::ColumnTypes(std::string)
  cyclus::Hdf5Back::CreateFLStrType(int)
  cyclus::Hdf5Back::CreateTable(cyclus::Datum*)
-@@ -501,6 +548,7 @@
+@@ -468,6 +517,7 @@
+ cyclus::Material::Create(cyclus::Agent*, double, boost::shared_ptr<cyclus::Composition>)
+ cyclus::Material::CreateUntracked(double, boost::shared_ptr<cyclus::Composition>)
+ cyclus::Material::Decay(int)
++cyclus::Material::DecayHeat()
+ cyclus::Material::ExtractComp(double, boost::shared_ptr<cyclus::Composition>, double)
+ cyclus::Material::ExtractQty(double)
+ cyclus::Material::ExtractRes(double)
+@@ -501,6 +551,7 @@
  cyclus::MockSim::GetProduct(int)
  cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int)
  cyclus::MockSim::MockSim(cyclus::AgentSpec, std::string, int, int)
@@ -214,7 +265,7 @@ AssertionError: False is not true
  cyclus::MockSim::Run()
  cyclus::MockSim::db()
  cyclus::MockSim::~MockSim()
-@@ -521,7 +569,7 @@
+@@ -521,7 +572,7 @@
  cyclus::PrefixInjector::PrefixInjector(cyclus::QueryableBackend*, std::string)
  cyclus::PrefixInjector::Query(std::string, std::vector<cyclus::Cond, std::allocator<cyclus::Cond> >*)
  cyclus::PrefixInjector::Tables()
@@ -223,7 +274,7 @@ AssertionError: False is not true
  cyclus::PrefixInjector::~PrefixInjector()
  cyclus::Product::Absorb(boost::shared_ptr<cyclus::Product>)
  cyclus::Product::Clone() const
-@@ -540,9 +588,14 @@
+@@ -540,9 +591,14 @@
  cyclus::Product::type() const
  cyclus::Product::units() const
  cyclus::Product::~Product()
@@ -238,7 +289,7 @@ AssertionError: False is not true
  cyclus::ProgTranslator::Context::Context()
  cyclus::ProgTranslator::Context::~Context()
  cyclus::ProgTranslator::FromProg()
-@@ -555,6 +608,8 @@
+@@ -555,6 +611,8 @@
  cyclus::ProgTranslator::ToProg()
  cyclus::ProgTranslator::Translate()
  cyclus::ProgTranslator::~ProgTranslator()
@@ -247,7 +298,7 @@ AssertionError: False is not true
  cyclus::QtyCoeffConverter<cyclus::Material>::QtyCoeffConverter(std::map<cyclus::Request<cyclus::Material>*, double, std::less<cyclus::Request<cyclus::Material>*>, std::allocator<std::pair<cyclus::Request<cyclus::Material>* const, double> > > const&)
  cyclus::QtyCoeffConverter<cyclus::Material>::convert(boost::shared_ptr<cyclus::Material>, cyclus::Arc const*, cyclus::ExchangeTranslationContext<cyclus::Material> const*) const
  cyclus::QtyCoeffConverter<cyclus::Material>::operator==(cyclus::Converter<cyclus::Material>&) const
-@@ -564,7 +619,7 @@
+@@ -564,7 +622,7 @@
  cyclus::QtyCoeffConverter<cyclus::Product>::operator==(cyclus::Converter<cyclus::Product>&) const
  cyclus::QtyCoeffConverter<cyclus::Product>::~QtyCoeffConverter()
  cyclus::QueryResult::QueryResult()
@@ -256,16 +307,20 @@ AssertionError: False is not true
  cyclus::QueryResult::~QueryResult()
  cyclus::QueryableBackend::QueryableBackend()
  cyclus::QueryableBackend::operator=(cyclus::QueryableBackend const&)
-@@ -609,6 +664,8 @@
+@@ -609,8 +667,10 @@
  cyclus::Report(OsiSolverInterface*)
  cyclus::ReportProg(OsiSolverInterface*)
  cyclus::ReqPrefComp(cyclus::Arc const&, cyclus::Arc const&)
+-cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
+-cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
 +cyclus::Request<cyclus::Material>*&& std::forward<cyclus::Request<cyclus::Material>*&&>(std::remove_reference<cyclus::Request<cyclus::Material>*&&>::type&)
 +cyclus::Request<cyclus::Material>*&& std::forward<cyclus::Request<cyclus::Material>*>(std::remove_reference<cyclus::Request<cyclus::Material>*>::type&)
- cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
- cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool)
++cyclus::Request<cyclus::Material>::Create(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
++cyclus::Request<cyclus::Material>::Request(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, boost::shared_ptr<cyclus::RequestPortfolio<cyclus::Material> >, std::string, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
  cyclus::Request<cyclus::Material>::commodity() const
-@@ -618,6 +675,8 @@
+ cyclus::Request<cyclus::Material>::exclusive() const
+ cyclus::Request<cyclus::Material>::portfolio() const
+@@ -618,6 +678,8 @@
  cyclus::Request<cyclus::Material>::requester() const
  cyclus::Request<cyclus::Material>::target() const
  cyclus::Request<cyclus::Material>::~Request()
@@ -274,7 +329,16 @@ AssertionError: False is not true
  cyclus::Request<cyclus::Product>::commodity() const
  cyclus::Request<cyclus::Product>::exclusive() const
  cyclus::Request<cyclus::Product>::portfolio() const
-@@ -662,8 +721,11 @@
+@@ -630,7 +692,7 @@
+ cyclus::RequestGroup::~RequestGroup()
+ cyclus::RequestPortfolio<cyclus::Material>::AddConstraint(cyclus::CapacityConstraint<cyclus::Material> const&)
+ cyclus::RequestPortfolio<cyclus::Material>::AddMutualReqs(std::vector<cyclus::Request<cyclus::Material>*, std::allocator<cyclus::Request<cyclus::Material>*> > const&)
+-cyclus::RequestPortfolio<cyclus::Material>::AddRequest(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, std::string, double, bool)
++cyclus::RequestPortfolio<cyclus::Material>::AddRequest(boost::shared_ptr<cyclus::Material>, cyclus::Trader*, std::string, double, bool, std::function<double (boost::shared_ptr<cyclus::Material>)>)
+ cyclus::RequestPortfolio<cyclus::Material>::RequestPortfolio()
+ cyclus::RequestPortfolio<cyclus::Material>::VerifyRequester_(cyclus::Request<cyclus::Material> const*)
+ cyclus::RequestPortfolio<cyclus::Material>::constraints() const
+@@ -662,8 +724,11 @@
  cyclus::ResourceExchange<cyclus::Material>::AddRequests_(cyclus::Trader*)
  cyclus::ResourceExchange<cyclus::Material>::AdjustAll()
  cyclus::ResourceExchange<cyclus::Material>::AdjustPrefs_(cyclus::Trader*)
@@ -286,7 +350,7 @@ AssertionError: False is not true
  cyclus::ResourceExchange<cyclus::Material>::~ResourceExchange()
  cyclus::ResourceExchange<cyclus::Product>::AddAllBids()
  cyclus::ResourceExchange<cyclus::Product>::AddAllRequests()
-@@ -671,8 +733,11 @@
+@@ -671,8 +736,11 @@
  cyclus::ResourceExchange<cyclus::Product>::AddRequests_(cyclus::Trader*)
  cyclus::ResourceExchange<cyclus::Product>::AdjustAll()
  cyclus::ResourceExchange<cyclus::Product>::AdjustPrefs_(cyclus::Trader*)
@@ -298,7 +362,7 @@ AssertionError: False is not true
  cyclus::ResourceExchange<cyclus::Product>::~ResourceExchange()
  cyclus::SecondLT<std::pair<std::string, double> >::operator()(std::pair<std::string, double> const&, std::pair<std::string, double> const&) const
  cyclus::Sha1::Clear()
-@@ -701,6 +766,7 @@
+@@ -701,6 +769,7 @@
  cyclus::SimInfo::SimInfo(int, int, int, std::string)
  cyclus::SimInfo::SimInfo(int, int, int, std::string, std::string)
  cyclus::SimInfo::operator=(cyclus::SimInfo const&)
@@ -306,7 +370,7 @@ AssertionError: False is not true
  cyclus::SimInfo::~SimInfo()
  cyclus::SimInit::Branch(cyclus::QueryableBackend*, boost::uuids::uuid, int, boost::uuids::uuid)
  cyclus::SimInit::BuildMaterial(cyclus::QueryableBackend*, int)
-@@ -708,6 +774,7 @@
+@@ -708,6 +777,7 @@
  cyclus::SimInit::Init(cyclus::Recorder*, cyclus::QueryableBackend*)
  cyclus::SimInit::InitBase(cyclus::QueryableBackend*, boost::uuids::uuid, int)
  cyclus::SimInit::LoadBuildSched()
@@ -314,7 +378,7 @@ AssertionError: False is not true
  cyclus::SimInit::LoadDecomSched()
  cyclus::SimInit::LoadGreedySolver(bool, std::set<std::string, std::less<std::string>, std::allocator<std::string> >)
  cyclus::SimInit::LoadInfo()
-@@ -747,6 +814,7 @@
+@@ -747,6 +817,7 @@
  cyclus::SqlStatement::~SqlStatement()
  cyclus::SqliteBack::Bind(boost::spirit::basic_hold_any<char>, cyclus::DbTypes, boost::shared_ptr<cyclus::SqlStatement>, int)
  cyclus::SqliteBack::BuildStmt(cyclus::Datum*)
@@ -322,7 +386,7 @@ AssertionError: False is not true
  cyclus::SqliteBack::ColAsVal(boost::shared_ptr<cyclus::SqlStatement>, int, cyclus::DbTypes)
  cyclus::SqliteBack::ColumnTypes(std::string)
  cyclus::SqliteBack::CreateTable(cyclus::Datum*)
-@@ -783,6 +851,8 @@
+@@ -783,6 +854,8 @@
  cyclus::Timer::DoTock()
  cyclus::Timer::Initialize(cyclus::Context*, cyclus::SimInfo)
  cyclus::Timer::KillSim()
@@ -331,7 +395,7 @@ AssertionError: False is not true
  cyclus::Timer::RegisterTimeListener(cyclus::TimeListener*)
  cyclus::Timer::Reset()
  cyclus::Timer::RunSim()
-@@ -794,9 +864,13 @@
+@@ -794,9 +867,13 @@
  cyclus::Timer::dur()
  cyclus::Timer::time()
  cyclus::Timer::~Timer()
@@ -345,7 +409,7 @@ AssertionError: False is not true
  cyclus::Trade<cyclus::Product>::Trade()
  cyclus::TradeExecutionContext<cyclus::Material>::TradeExecutionContext()
  cyclus::TradeExecutionContext<cyclus::Material>::~TradeExecutionContext()
-@@ -808,6 +882,9 @@
+@@ -808,6 +885,9 @@
  cyclus::TradeExecutor<cyclus::Product>::RecordTrades(cyclus::Context*)
  cyclus::TradeExecutor<cyclus::Product>::TradeExecutor(std::vector<cyclus::Trade<cyclus::Product>, std::allocator<cyclus::Trade<cyclus::Product> > > const&)
  cyclus::TradeExecutor<cyclus::Product>::~TradeExecutor()
@@ -355,7 +419,7 @@ AssertionError: False is not true
  cyclus::Trader::AcceptMatlTrades(std::vector<std::pair<cyclus::Trade<cyclus::Material>, boost::shared_ptr<cyclus::Material> >, std::allocator<std::pair<cyclus::Trade<cyclus::Material>, boost::shared_ptr<cyclus::Material> > > > const&)
  cyclus::Trader::AcceptProductTrades(std::vector<std::pair<cyclus::Trade<cyclus::Product>, boost::shared_ptr<cyclus::Product> >, std::allocator<std::pair<cyclus::Trade<cyclus::Product>, boost::shared_ptr<cyclus::Product> > > > const&)
  cyclus::Trader::AdjustMatlPrefs(std::map<cyclus::Request<cyclus::Material>*, std::map<cyclus::Bid<cyclus::Material>*, double, std::less<cyclus::Bid<cyclus::Material>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Material>* const, double> > >, std::less<cyclus::Request<cyclus::Material>*>, std::allocator<std::pair<cyclus::Request<cyclus::Material>* const, std::map<cyclus::Bid<cyclus::Material>*, double, std::less<cyclus::Bid<cyclus::Material>*>, std::allocator<std::pair<cyclus::Bid<cyclus::Material>* const, double> > > > > >&)
-@@ -834,6 +911,8 @@
+@@ -834,6 +914,8 @@
  cyclus::ValueError::ValueError(cyclus::ValueError const&)
  cyclus::ValueError::ValueError(std::string)
  cyclus::ValueError::~ValueError()
@@ -364,7 +428,7 @@ AssertionError: False is not true
  cyclus::XMLFileLoader::BuildAgent(std::string, cyclus::Agent*)
  cyclus::XMLFileLoader::LoadControlParams()
  cyclus::XMLFileLoader::LoadInitialAgents()
-@@ -862,6 +941,8 @@
+@@ -862,6 +944,8 @@
  cyclus::compmath::Sub(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > > const&, std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > > const&)
  cyclus::compmath::Sum(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > > const&)
  cyclus::compmath::ValidNucs(std::map<int, double, std::less<int>, std::allocator<std::pair<int const, double> > > const&)
@@ -373,7 +437,7 @@ AssertionError: False is not true
  cyclus::differentAgent(OsiSolverInterface&, OsiSolverInterface&, bool)
  cyclus::eps()
  cyclus::eps_rsrc()
-@@ -882,12 +963,19 @@
+@@ -882,12 +966,19 @@
  cyclus::toolkit::Assays::Tails() const
  cyclus::toolkit::BasicFunctionFactory::BasicFunctionFactory()
  cyclus::toolkit::BasicFunctionFactory::GetFunctionPtr(std::string, std::string)
@@ -393,7 +457,7 @@ AssertionError: False is not true
  cyclus::toolkit::Commodity::Commodity(std::string)
  cyclus::toolkit::Commodity::name() const
  cyclus::toolkit::Commodity::operator!=(cyclus::toolkit::Commodity const&) const
-@@ -917,7 +1005,6 @@
+@@ -917,7 +1008,6 @@
  cyclus::toolkit::CommodityRecipeContext::UpdateInRec(std::string, std::string)
  cyclus::toolkit::CommodityRecipeContext::UpdateRsrc(std::string, boost::shared_ptr<cyclus::Resource>)
  cyclus::toolkit::CommodityRecipeContext::schema()
@@ -401,7 +465,7 @@ AssertionError: False is not true
  cyclus::toolkit::ExpFunctionFactory::GetFunctionPtr(std::string)
  cyclus::toolkit::ExpFunctionFactory::~ExpFunctionFactory()
  cyclus::toolkit::ExponentialFunction::ExponentialFunction(double, double, double)
-@@ -928,7 +1015,6 @@
+@@ -928,7 +1018,6 @@
  cyclus::toolkit::JsonInsertOrAppend(Json::Value&, std::string, Json::Value&)
  cyclus::toolkit::JsonToXml(std::string)
  cyclus::toolkit::LinFunctionFactory::GetFunctionPtr(std::string)
@@ -409,7 +473,7 @@ AssertionError: False is not true
  cyclus::toolkit::LinFunctionFactory::~LinFunctionFactory()
  cyclus::toolkit::LinearFunction::LinearFunction(double, double)
  cyclus::toolkit::LinearFunction::Print()
-@@ -991,8 +1077,9 @@
+@@ -991,8 +1080,9 @@
  cyclus::toolkit::MatlSellPolicy::set_throughput(double)
  cyclus::toolkit::MatlSellPolicy::~MatlSellPolicy()
  cyclus::toolkit::PiecewiseFunction::PiecewiseFunction()
@@ -424,6 +488,6 @@ AssertionError: False is not true
 --------------------- >> end captured stdout << ----------------------
 
 ----------------------------------------------------------------------
-Ran 1366 tests in 54.931s
+Ran 1371 tests in 55.681s
 
 FAILED (failures=1)
