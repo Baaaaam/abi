@@ -1,10 +1,13 @@
 this aims to provide a script to help analysing the ABI diffs from cyclus
 nosetest.
 
-ABI_ana.sh take 2 argument: 
- - 1 the file containing all the deletion from the abi 
- - 2 the file containing all the addition from the ABI
+ABI_ana.sh: 
+  - generate from the ABI_full.txt file :
+    - 1 the file containing all the deletion from the ABI 
+    - 2 the file containing all the addition from the ABI
+  - for each line in minus try to find the macthes one in plus.
 it will print for each deletion the matching function in the addition
+
 
 
 `ABI_full.txt` corresponds to the full output of the Cyclus nosetest.
